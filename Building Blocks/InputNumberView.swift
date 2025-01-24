@@ -20,7 +20,7 @@ struct InputNumberView: View {
                 .textFieldStyle(.roundedBorder)
                 .font(.headline)
                 .multilineTextAlignment(.center)
-                
+            
             
             Button(action: {
                 let random = Int.random(in: 1...10)

@@ -20,7 +20,7 @@ struct UserInputView: View {
                 .textFieldStyle(.roundedBorder)
                 .font(.headline)
                 .multilineTextAlignment(.center)
-                
+            
             
             Button(action: {
                 output = primeraUltimaLetras(lenguaje: input)

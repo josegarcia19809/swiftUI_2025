@@ -12,7 +12,7 @@ struct DiceyView: View {
     @State var leftDiceNumber = 1
     @State var rightDiceNumber = 1
     var body: some View {
-        VStack{
+        VStack {
             Text("Dicey")
                 .foregroundStyle(Color.cyan)
                 .bold()

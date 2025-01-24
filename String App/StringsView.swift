@@ -9,8 +9,8 @@ import SwiftUI
 
 struct StringsView: View {
     var body: some View {
-        ZStack{
-            VStack{
+        ZStack {
+            VStack {
                 Button(action: {
                     strings()
                 }) {

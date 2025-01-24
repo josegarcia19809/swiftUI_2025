@@ -17,11 +17,11 @@ struct CalculatorAppView: View {
     let calculator = Calculator()
     
     var body: some View {
-        VStack(spacing: 20){
+        VStack(spacing: 20) {
             
             CustomTextField(title: "First Number", text: $firstNumber)
             
-            Picker("Picker", selection: $operation){
+            Picker("Picker", selection: $operation) {
                 Text("+").tag("+")
                 Text("-").tag("-")
                 Text("*").tag("*")
@@ -35,7 +35,7 @@ struct CalculatorAppView: View {
                 .font(.title)
                 .foregroundStyle(Color(.mint))
             
-            Button{
+            Button {
                 self.result = calculator.calculate(firstNumber: firstNumber, secondNumber: secondNumber, operation: operation)
             } label: {
                 Text("Calculate")
@@ -49,7 +49,7 @@ struct CalculatorAppView: View {
 }
 
 class Calculator {
-    func calculate(firstNumber : String, secondNumber: String, operation: String) -> String{
+    func calculate(firstNumber: String, secondNumber: String, operation: String) -> String {
         let num1 = Int(firstNumber) ?? 0
         let num2 = Int(secondNumber) ?? 0
         

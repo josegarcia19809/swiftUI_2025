@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var mensaje: String="Saludos"
+    @State private var mensaje: String = "Saludos"
     var body: some View {
         ZStack {
             Color.peterRiver
@@ -22,9 +22,9 @@ struct ContentView: View {
                     .foregroundStyle(Color.white)
                     .bold()
                     .font(.title)
-                Button{
+                Button {
                     mensaje = helloWorld()
-                }label: {
+                } label: {
                     Text("Go")
                         .bold()
                         .frame(width: 150, height: 50)
@@ -36,7 +36,7 @@ struct ContentView: View {
                     .frame(width: 350, height: 50)
                     .foregroundColor(.white)
                     .overlay(
-                        HStack{
+                        HStack {
                             Image(systemName: "phone")
                             Text("123-456-789")
                                 .font(.title2)
