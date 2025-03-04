@@ -10,7 +10,7 @@ import SwiftUI
 struct DateTimeView: View {
     let currenDate = Date()
     let formatter = DateFormatter()
-    
+
     init() {
         formatter.dateStyle = .long
         formatter.timeStyle = .medium
